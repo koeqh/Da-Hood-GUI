@@ -1,3 +1,6 @@
+Section:NewKeybind("KeybindText", "KeybindInfo", Enum.KeyCode.F, function()
+	Library:ToggleUI()
+end)
 game:GetService("StarterGui"):SetCore("SendNotification",{
 	Title = "Da Hood GUI",
 	Text = "Successfully Loaded!",
