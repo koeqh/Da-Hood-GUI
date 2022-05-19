@@ -3,7 +3,7 @@ game:GetService("StarterGui"):SetCore("SendNotification",{
 	Text = "Successfully Loaded!",
 })
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Da Hood - 1542x1", "Serpent")
+local Window = Library.CreateLib("Da Hood - 1542x1", "GrapeTheme")
 local Tab = Window:NewTab("Main")
 local Section = Tab:NewSection("Main")
 Section:NewButton("Smooth Aimbot", "Keybind Is C", function()
