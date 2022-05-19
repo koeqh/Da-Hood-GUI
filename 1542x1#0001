@@ -2,7 +2,7 @@ game:GetService("StarterGui"):SetCore("SendNotification",{
 	Title = "Da Hood GUI",
 	Text = "Successfully Loaded!",
 })
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/449198ab5e63b988b1297cba403ac3a1ed672d9a/source.lua"))()
 local Window = Library.CreateLib("Da Hood - 1542x1", "GrapeTheme")
 local Tab = Window:NewTab("Main")
 local Section = Tab:NewSection("Main")
