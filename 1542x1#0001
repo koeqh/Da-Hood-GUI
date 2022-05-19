@@ -1,6 +1,3 @@
-Section:NewKeybind("KeybindText", "KeybindInfo", Enum.KeyCode.F, function()
-	Library:ToggleUI()
-end)
 game:GetService("StarterGui"):SetCore("SendNotification",{
 	Title = "Da Hood GUI",
 	Text = "Successfully Loaded!",
@@ -294,3 +291,6 @@ local Section = Tab:NewSection("GS21, Low End Swagmode Crasher")
 local Section = Tab:NewSection("tenaki, Smooth aimlock")
 local Section = Tab:NewSection("1542x1 Made This")
 local Section = Tab:NewSection("hi gabe")
+Section:NewKeybind("v", "KeybindInfo", Enum.KeyCode.F, function()
+	Library:ToggleUI()
+end)
