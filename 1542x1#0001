@@ -3,9 +3,12 @@ game:GetService("StarterGui"):SetCore("SendNotification",{
 	Text = "Successfully Loaded!",
 })
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/449198ab5e63b988b1297cba403ac3a1ed672d9a/source.lua"))()
-local Window = Library.CreateLib("Da Hood GUI - 1542x1", "LightTheme")
+local Window = Library.CreateLib("Da Hood GUI - 1542x1", "DarkTheme")
 local Tab = Window:NewTab("Main")
 local Section = Tab:NewSection("Main")
+Section:NewKeybind("Menu Keybind", "KeybindInfo", Enum.KeyCode.V, function()
+	Library:ToggleUI()
+end)
 Section:NewButton("Smooth Aimbot", "Keybind Is C", function()
 getgenv().RecurringPoint = "UpperTorso"
 getgenv().Hitbox = "UpperTorso"
@@ -291,5 +294,3 @@ local Section = Tab:NewSection("GS21, Low End Swagmode Crasher")
 local Section = Tab:NewSection("tenaki, Smooth aimlock")
 local Section = Tab:NewSection("1542x1 Made This")
 local Section = Tab:NewSection("hi gabe")
-Section:NewKeybind("Menu Keybind", "KeybindInfo", Enum.KeyCode.V, function()
-end)
